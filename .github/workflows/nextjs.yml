@@ -61,10 +61,12 @@ jobs:
           #
           # You may remove this line if you want to manage the configuration yourself.
           static_site_generator: next
+      - name: Set env
+        run: |
+          touch .env.local
+          echo HOST_NAME=${{ vars.HOST_NAME }}
       - name: Restore cache
         uses: actions/cache@v3
-        env:
-          HOST_NAME: Mona
         with:
           path: |
             .next/cache
