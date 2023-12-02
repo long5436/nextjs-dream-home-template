@@ -1,4 +1,4 @@
-import type { Config } from 'tailwindcss'
+import type { Config } from 'tailwindcss';
 
 const config: Config = {
   content: [
@@ -8,13 +8,89 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      colors: {
+        primary: 'rgba(var(--color-primary), <alpha-value>)',
+        primaryHover: 'rgba(var(--color-primary-hover), <alpha-value>)',
+        footer: 'rgba(var(--color-footer), <alpha-value>)',
+      },
+      container: {
+        padding: {
+          DEFAULT: '1rem',
+          sm: '1rem',
+          lg: '1rem',
+          xl: '1rem',
+          '2xl': '1rem',
+        },
+        screens: {
+          xl: '1140px',
+          '2xl': '1140px',
+        },
+      },
+      fontSize: {
+        sm: '0.75rem',
+      },
+      animation: {
+        menu: 'menu 0.5s ease forwards',
+        'menu-close': 'menu-close 0.5s ease forwards',
+        'overlay-in': 'overlay-in 0.5s ease-out forwards',
+        'overlay-out': 'overlay-out 0.5s ease-out forwards',
+        'icon-move': 'icon-move 0.3s linear',
+      },
+      keyframes: {
+        menu: {
+          '0%': {
+            transform: 'translateX(-100%)',
+          },
+          '100%': {
+            transform: 'translateX(0%)',
+          },
+        },
+        'menu-close': {
+          '0%': {
+            transform: 'translateX(0%)',
+          },
+          '100%': {
+            transform: 'translateX(-100%)',
+          },
+        },
+        'overlay-in': {
+          '0%': {
+            opacity: '0',
+          },
+          '100%': {
+            opacity: '1',
+          },
+        },
+        'overlay-out': {
+          '0%': {
+            opacity: '1',
+          },
+          '100%': {
+            opacity: '0',
+          },
+        },
+        'icon-move': {
+          '0%': {
+            transform: 'translateX(0)',
+            opacity: '1',
+          },
+
+          '49%': {
+            transform: 'translateX(20px)',
+            opacity: '0',
+          },
+          '50%': {
+            transform: 'translateX(-20px)',
+            opacity: '0',
+          },
+          '100%': {
+            transform: 'translateX(0)',
+            opacity: '1',
+          },
+        },
       },
     },
   },
   plugins: [],
-}
-export default config
+};
+export default config;
