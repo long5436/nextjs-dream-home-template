@@ -1,14 +1,14 @@
-"use client";
-import clsx from "clsx";
-import Image from "next/image";
-import Link from "next/link";
-import { useState } from "react";
-import { IconType } from "react-icons";
-import { GrMenu } from "react-icons/gr";
-import { IoCloseSharp } from "react-icons/io5";
-import { styled } from "styled-components";
-import PrimaryButton from "../../PrimaryButton";
-import HeaderListMenu from "./HeaderListMenu";
+'use client';
+import clsx from 'clsx';
+import Image from 'next/image';
+import Link from 'next/link';
+import { useState } from 'react';
+import { IconType } from 'react-icons';
+import { GrMenu } from 'react-icons/gr';
+import { IoCloseSharp } from 'react-icons/io5';
+import { styled } from 'styled-components';
+import PrimaryButton from '../../PrimaryButton';
+import HeaderListMenu from './HeaderListMenu';
 
 function Icon({ className }: { className: string }) {
   return <img src="/images/home-dolar.svg" alt="" className={className} />;
@@ -40,40 +40,40 @@ function MenuMobile() {
     <>
       {/* menu button */}
       <div
-        className="lg:hidden"
+        className="lg:hidden flex"
         onClick={() => {
           setVisible(true);
           setIsClose(false);
         }}
       >
-        <GrMenu className="text-primary" size="33" />
+        <GrMenu className="text-primary m-auto" size="33" />
       </div>
 
       {visible ? (
         <div className="fixed top-0 left-0 h-screen w-screen">
           <div
-            className={clsx("absolute h-screen w-screen bg-black/50", {
-              "animate-overlay-in": !isClose,
-              "animate-overlay-out": isClose,
+            className={clsx('absolute h-screen w-screen bg-black/50', {
+              'animate-overlay-in': !isClose,
+              'animate-overlay-out': isClose,
             })}
             onClick={handleCloseMenu}
           ></div>
           <div
             className={clsx(
-              "absolute top-0 left-0 h-full w-[300px] bg-white -translate-x-full",
+              'absolute top-0 left-0 h-full w-[300px] bg-white -translate-x-full',
               {
-                "animate-menu": !isClose,
-                "animate-menu-close": isClose,
+                'animate-menu': !isClose,
+                'animate-menu-close': isClose,
               }
             )}
           >
             <div className="relative z-50 px-4 shadow-2xl shadow-black/10 flex items-center justify-between py-3">
               <Link href="/">
                 <Image
-                  src="/images/logo@2x.png"
+                  src="/images/logo.png"
                   alt="home"
                   width="197"
-                  height="100"
+                  height="48"
                   className="h-12 w-auto"
                 />
               </Link>

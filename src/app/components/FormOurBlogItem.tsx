@@ -18,7 +18,6 @@ function FormOurBlogItem({ data }: Props) {
           height={100}
           width={100}
           quality={100}
-          unoptimized
           className="w-full h-auto object-cover group-hover:scale-110 transition-transform duration-700"
         />
 

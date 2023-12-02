@@ -16,11 +16,11 @@ function Header() {
         <div className="">
           <Link href="/">
             <Image
-              src="/images/logo@2x.png"
-              alt="home"
+              src="/images/logo.png"
+              alt=""
               width="197"
-              height="100"
-              className="h-12 w-auto"
+              height="48"
+              // className="h-12 w-full"
             />
           </Link>
         </div>

@@ -26,7 +26,6 @@ function CardFeaturedImage({ data }: Props) {
             height={100}
             priority
             quality={100}
-            unoptimized
             className="w-full h-auto hover:scale-110 transition duration-300 rounded-xl overflow-hidden"
           />
         </SwiperSlide>
