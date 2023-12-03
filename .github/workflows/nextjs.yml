@@ -63,8 +63,8 @@ jobs:
           static_site_generator: next
       - name: Set env
         run: |
-          touch .env.local
-          echo HOST_NAME=${{ vars.HOST_NAME }} >> .env.local
+          touch .env
+          echo HOST_NAME=${{ vars.HOST_NAME }} >> .env
       - name: Restore cache
         uses: actions/cache@v3
         with:
