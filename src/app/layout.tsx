@@ -21,7 +21,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={poppins.className + ' ' + 'text-[0.9rem]'}>
+      <body
+        className={poppins.className + ' ' + 'text-[0.9rem] text-textPrimary'}
+      >
         <Header />
         {children}
         <Footer />

@@ -5,6 +5,7 @@ import { PiBathtub } from 'react-icons/pi';
 import 'swiper/css';
 import CardFeaturedImage from './CardFeaturedImage';
 import { Card } from './FeaturedProperties';
+import FeaturedTag from './FeaturedTag';
 
 interface Props {
   data: Card;
@@ -12,10 +13,18 @@ interface Props {
 
 function CardFeatured({ data }: Props) {
   return (
-    <div className="border rounded-2xl p-4 text-left">
+    <div className="border rounded-2xl p-4 text-left group relative">
       <CardFeaturedImage data={data.images} />
 
-      <Link href="#" className="text-lg font-semibold block pb-1">
+      <div className="absolute left-[10px] top-8 z-10">
+        {data.featured ? <FeaturedTag /> : <></>}
+        {data.sale ? <FeaturedTag sale /> : <></>}
+      </div>
+
+      <Link
+        href="#"
+        className="text-lg font-semibold block pb-1 hover:text-primary transition-colors duration-300"
+      >
         <h3>{data.name}</h3>
       </Link>
 

@@ -12,6 +12,8 @@ const config: Config = {
         primary: 'rgba(var(--color-primary), <alpha-value>)',
         primaryHover: 'rgba(var(--color-primary-hover), <alpha-value>)',
         footer: 'rgba(var(--color-footer), <alpha-value>)',
+        textPrimary: 'rgba(var(--color-text-primary), <alpha-value>)',
+        newPurple: 'rgba(var(--color-new-purple), <alpha-value>)',
       },
       container: {
         padding: {
@@ -35,6 +37,7 @@ const config: Config = {
         'overlay-in': 'overlay-in 0.5s ease-out forwards',
         'overlay-out': 'overlay-out 0.5s ease-out forwards',
         'icon-move': 'icon-move 0.3s linear',
+        'image-mark': 'image-mark linear 5s infinite',
       },
       keyframes: {
         menu: {
@@ -85,6 +88,28 @@ const config: Config = {
           },
           '100%': {
             transform: 'translateX(0)',
+            opacity: '1',
+          },
+        },
+        'image-mark': {
+          '0%': {
+            transform: 'translateY(0px)',
+            opacity: '1',
+          },
+          '25%': {
+            transform: 'translateY(-20px)',
+            opacity: '1',
+          },
+          '50%': {
+            transform: 'translateY(0px)',
+            opacity: '1',
+          },
+          '75%': {
+            transform: 'translateY(20px)',
+            opacity: '1',
+          },
+          '100%': {
+            transform: 'translateY(0px)',
             opacity: '1',
           },
         },

@@ -6,6 +6,8 @@
   --color-footer: 28, 28, 30;
   --color-primary: 255, 169, 32;
   --color-primary-hover: 242, 149, 0;
+  --color-text-primary: 18, 10, 33;
+  --color-new-purple: 110, 85, 255;
 }
 
 .footer-card {
@@ -80,4 +82,44 @@
 .card-shadow {
   box-shadow: 0px 4px 26px 0px rgba(66, 71, 76, 0.0784313725);
   // box-shadow: 0px 4px 26px 0px rgba(66, 71, 76, 1);
+}
+
+.photo-gradient {
+  overflow: hidden;
+
+  &::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    content: '';
+    background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 53.85%,
+      #000000 100%
+    );
+    opacity: 0.7;
+    height: 100%;
+    transition: linear 0.4s;
+  }
+
+  &:hover::after {
+    height: 200%;
+  }
+}
+
+.clip-path-featured-tag {
+  &::after {
+    // content: '';
+    // position: absolute;
+    // top: 50%;
+    // right: 0%;
+    // transform: translateY(-50%);
+    // right: -10px;
+    // width: 50%;
+    // height: 100%;
+    // background: #ffa920;
+    clip-path: polygon(70% 0, 100% 50%, 70% 100%, 0% 100%, 0 50%, 0% 0%);
+    z-index: -1;
+  }
 }
