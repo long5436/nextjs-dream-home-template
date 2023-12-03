@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import Link from 'next/link';
 import { MdBookmarkBorder } from 'react-icons/md';
 import 'swiper/css';
 import { Navigation, Pagination } from 'swiper/modules';
@@ -12,7 +13,14 @@ interface Props {
 
 const pagination = {
   clickable: true,
-  renderBullet: function (index, className) {
+  renderBullet: function (index: number, className: string, ...others) {
+    console.log({ index, className, others });
+
+    return /** HTML */ `
+    <div>
+    ${index + 1}
+    </div>`;
+
     return '<span class="' + className + '">' + (index + 1) + '</span>';
   },
 };
@@ -27,6 +35,7 @@ function CardFeaturedImage({ data }: Props) {
       }}
       pagination={pagination}
       modules={[Pagination, Navigation]}
+      className="my-swiper"
     >
       {data.map((item, index) => (
         <SwiperSlide
@@ -40,9 +49,22 @@ function CardFeaturedImage({ data }: Props) {
             height={100}
             priority
             quality={100}
-            className="w-full h-auto group-hover:scale-110 transition duration-300"
+            className="w-full h-auto group-hover:scale-110  transition duration-300"
           />
-          {/* bg-[rgb(255,245,224)] */}
+
+          <Link
+            href=""
+            className="absolute inset-0 flex group-hover:bg-black/40 transition duration-300"
+          >
+            <Image
+              src="/images/plus.svg"
+              alt=""
+              height={60}
+              width={60}
+              className="m-auto opacity-0 group-hover:opacity-100 transition duration-300 delay-100 z-10"
+            />
+          </Link>
+
           <div className="absolute top-0 right-0 w-[38px] h-[38px] pt-1 pr-1 border-t-[38px]  border-t-[rgb(255,245,224)] border-l-[38px] border-l-transparent translate-x-1">
             <MdBookmarkBorder
               size="16"

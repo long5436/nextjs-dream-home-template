@@ -13,7 +13,7 @@ interface Props {
 
 function CardFeatured({ data }: Props) {
   return (
-    <div className="border rounded-2xl p-4 text-left group relative">
+    <div className="border rounded-2xl p-4 text-left group relative group">
       <CardFeaturedImage data={data.images} />
 
       <div className="absolute left-[10px] top-8 z-10">
