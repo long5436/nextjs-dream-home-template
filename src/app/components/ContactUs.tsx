@@ -31,7 +31,7 @@ function ContactUs() {
   };
 
   return (
-    <section className="container mx-auto bg-[url('/images/bg-contact.png')] pb-20">
+    <section className="container mx-auto bg-[url('/images/bg-contact.png')] 2xl:max-w-[1140px]">
       <div className="grid grid-cols-1 md:grid-cols-2 py-6">
         <div className="relative overflow-hidden">
           <Image
@@ -187,6 +187,7 @@ function ContactUs() {
 
               <div
                 className="relative pt-2 cursor-pointer"
+                // @ts-ignore
                 onClick={handleSelect}
               >
                 <div

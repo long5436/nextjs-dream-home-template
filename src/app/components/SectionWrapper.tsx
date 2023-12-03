@@ -7,6 +7,7 @@ interface Props {
   children: ReactNode;
   className?: string;
   noContainer?: boolean;
+  container2xl?: boolean;
 }
 
 function SectionWrapper({
@@ -15,12 +16,14 @@ function SectionWrapper({
   children,
   className,
   noContainer,
+  container2xl,
 }: Props) {
   return (
     <section className={className || ''}>
       <div
         className={clsx('mx-auto py-24', {
           container: !noContainer,
+          '2xl:max-w-[1140px]': !container2xl && !noContainer,
         })}
       >
         <div className="text-center">

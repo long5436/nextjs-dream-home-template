@@ -21,8 +21,8 @@ const brands = [
 
 function Slider() {
   return (
-    <section className="py-20">
-      <div className="container mx-auto">
+    <section className="pt-20">
+      <div className="container 2xl:max-w-[1140px] mx-auto">
         <h4 className="font-semibold text-base pb-4">
           Trusted by over 150+ major companies
         </h4>
