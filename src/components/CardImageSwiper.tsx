@@ -9,7 +9,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { Navigation, Pagination, Parallax } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { CardData } from './pages/home/FeaturedProperties';
+import { CardData } from '~/types';
 
 interface Props {
   data: CardData;

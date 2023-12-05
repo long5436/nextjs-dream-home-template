@@ -8,10 +8,10 @@ import {
   FaTwitter,
 } from 'react-icons/fa6';
 import { IoMdMail } from 'react-icons/io';
-import { Agent } from './pages/home/MeetTheAgents';
+import { CardAgent } from '~/types';
 
 interface Props {
-  data: Agent;
+  data: CardAgent;
 }
 
 function MeetTheAgentItem({ data }: Props) {
