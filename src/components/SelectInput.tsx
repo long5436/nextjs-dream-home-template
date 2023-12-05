@@ -106,7 +106,7 @@ function SelectInput({
             <li
               key={index}
               className={clsx('px-4 py-2 hover:bg-black/5', {
-                'text-primary font-bold': item.value === select,
+                'text-primary font-bold': item.value === select.value,
               })}
               data-value={item.value}
             >
