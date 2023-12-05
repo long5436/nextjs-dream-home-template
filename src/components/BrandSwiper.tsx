@@ -3,26 +3,13 @@ import Image from 'next/image';
 import 'swiper/css';
 import { Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
-
-const brands = [
-  { image: '/images/brand-1.png', href: '' },
-  { image: '/images/brand-2.png', href: '' },
-  { image: '/images/brand-3.png', href: '' },
-  { image: '/images/brand-4.png', href: '' },
-  { image: '/images/brand-5.png', href: '' },
-  { image: '/images/brand-6.png', href: '' },
-  { image: '/images/brand-1.png', href: '' },
-  { image: '/images/brand-2.png', href: '' },
-  { image: '/images/brand-3.png', href: '' },
-  { image: '/images/brand-4.png', href: '' },
-  { image: '/images/brand-5.png', href: '' },
-  { image: '/images/brand-6.png', href: '' },
-];
+import brands from '~/jsons/brands.json';
+import Wrapper from './Wrapper';
 
 function Slider() {
   return (
     <section className="pt-20">
-      <div className="container 2xl:max-w-[1140px] mx-auto">
+      <Wrapper noPaddingY>
         <h4 className="font-semibold text-base pb-4">
           Trusted by over 150+ major companies
         </h4>
@@ -64,7 +51,7 @@ function Slider() {
             </SwiperSlide>
           ))}
         </Swiper>
-      </div>
+      </Wrapper>
     </section>
   );
 }

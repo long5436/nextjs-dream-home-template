@@ -24,9 +24,11 @@ const config: Config = {
           '2xl': '1rem',
         },
         screens: {
-          xl: '1140px',
+          // lg: '992px',
+          // xl: '1140px',
           // '2xl': '1140px',
-          '2xl': '1520px',
+          // '2xl': '1520px',
+          '2xl': '1490px',
         },
       },
       fontSize: {
@@ -39,6 +41,7 @@ const config: Config = {
         'overlay-out': 'overlay-out 0.5s ease-out forwards',
         'icon-move': 'icon-move 0.3s linear',
         'image-mark': 'image-mark linear 5s infinite',
+        rotate: 'rotate linear 15s infinite',
       },
       keyframes: {
         menu: {
@@ -112,6 +115,14 @@ const config: Config = {
           '100%': {
             transform: 'translateY(0px)',
             opacity: '1',
+          },
+        },
+        rotate: {
+          '0%': {
+            transform: 'rotate(0deg)',
+          },
+          '100%': {
+            transform: 'rotate(-360deg)',
           },
         },
       },

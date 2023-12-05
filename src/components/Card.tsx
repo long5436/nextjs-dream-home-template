@@ -7,19 +7,19 @@ import { PiBathtub } from 'react-icons/pi';
 import { TiPlus } from 'react-icons/ti';
 import { Tooltip as ReactTooltip } from 'react-tooltip';
 import 'swiper/css';
-import CardFeaturedImage from './CardFeaturedImage';
-import { Card } from './FeaturedProperties';
-import FeaturedTag from './FeaturedTag';
+import { CardData } from '~/types';
+import CardImageSwiper from './CardImageSwiper';
+import FeaturedTag from './pages/home/FeaturedTag';
 
 interface Props {
-  data: Card;
+  data: CardData;
 }
 
-function CardFeatured({ data }: Props) {
+function Card({ data }: Props) {
   return (
     <div className="rounded-2xl p-4 text-left group relative group card-shadow card-featured bg-white">
       <div className="relative overflow-hidden rounded-xl">
-        <CardFeaturedImage data={data} />
+        <CardImageSwiper data={data} />
       </div>
 
       <div className="absolute left-[10px] top-8 z-10">
@@ -96,4 +96,4 @@ function CardFeatured({ data }: Props) {
   );
 }
 
-export default CardFeatured;
+export default Card;

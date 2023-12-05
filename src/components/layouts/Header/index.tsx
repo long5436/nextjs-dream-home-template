@@ -1,8 +1,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { IconType } from 'react-icons';
-import PrimaryButton from '~/app/components/PrimaryButton';
-import HeaderListMenu from '~/app/components/layouts/Header/HeaderListMenu';
+import PrimaryButton from '~/components/PrimaryButton';
+import HeaderListMenu from '~/components/layouts/Header/HeaderListMenu';
 import MenuMobile from './MenuMobile';
 
 function Icon({ className }: { className: string }) {

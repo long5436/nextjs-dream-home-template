@@ -10,6 +10,25 @@
   --color-new-purple: 110, 85, 255;
 }
 
+.primary-button {
+  &:hover {
+    .icon {
+      animation: icon-animation linear 0.3s;
+
+      @keyframes icon-animation {
+        50% {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        51% {
+          opacity: 0;
+          transform: translateY(-20px);
+        }
+      }
+    }
+  }
+}
+
 .footer-card {
   background-color: rgb(255, 245, 224);
 
@@ -176,3 +195,17 @@
   }
 }
 // swiper-pagination-bullet-active
+
+.custom-select {
+  opacity: 0.15s ease-out;
+  transform: scale(0.75) translateY(-21px);
+  transform-origin: 50% 0;
+  transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out;
+  pointer-events: none;
+}
+
+.custom-select-open {
+  transform: scale(1) translateY(0);
+  width: 100%;
+  pointer-events: all;
+}

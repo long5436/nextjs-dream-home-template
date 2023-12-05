@@ -2,10 +2,10 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { FaArrowRight } from 'react-icons/fa6';
 import { PiFolderOpenThin } from 'react-icons/pi';
-import { Blog } from './FormOurBlog';
+import { CardBlog } from '~/types';
 
 interface Props {
-  data: Blog;
+  data: CardBlog;
 }
 
 function FormOurBlogItem({ data }: Props) {

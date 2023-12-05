@@ -3,5 +3,5 @@
 export default function ImageLoader({ src, width, quality }) {
   const hostName = process.env.HOST_NAME || '';
 
-  return `${hostName}${src}?w=${width}&q=${quality || 75}`;
+  return `${hostName}${src}?w=${width}&q=${quality || 100}`;
 }

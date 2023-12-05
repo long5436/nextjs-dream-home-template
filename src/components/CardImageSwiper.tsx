@@ -9,25 +9,13 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { Navigation, Pagination, Parallax } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Card } from './FeaturedProperties';
+import { CardData } from './pages/home/FeaturedProperties';
 
 interface Props {
-  data: Card;
+  data: CardData;
 }
 
-const pagination = {
-  clickable: true,
-  renderBullet: function (index: number, className: string) {
-    return /** HTML */ `
-    <div>
-    ${index + 1}
-    </div>`;
-
-    return '<span class="' + className + '">' + (index + 1) + '</span>';
-  },
-};
-
-function CardFeaturedImage({ data }: Props) {
+function CardImage({ data }: Props) {
   return (
     <Swiper
       loop={true}
@@ -82,7 +70,7 @@ function CardFeaturedImage({ data }: Props) {
         </div>
       </div>
 
-      {data.images.map((item, index) => (
+      {data.images.map((item: string, index: number) => (
         <SwiperSlide key={index} className="overflow-hidden relative">
           <Link
             href="#"
@@ -104,4 +92,4 @@ function CardFeaturedImage({ data }: Props) {
   );
 }
 
-export default CardFeaturedImage;
+export default CardImage;

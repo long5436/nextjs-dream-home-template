@@ -1,5 +1,5 @@
-import clsx from 'clsx';
 import { ReactNode } from 'react';
+import Wrapper from './Wrapper';
 
 interface Props {
   title: string;
@@ -20,18 +20,14 @@ function SectionWrapper({
 }: Props) {
   return (
     <section className={className || ''}>
-      <div
-        className={clsx('mx-auto py-24', {
-          container: !noContainer,
-          '2xl:max-w-[1140px]': !container2xl && !noContainer,
-        })}
-      >
+      <Wrapper noContainer={noContainer} container2xl={container2xl}>
         <div className="text-center">
           <h2 className="font-bold text-5xl">{title}</h2>
           <p className="opacity-50 py-6">{description}</p>
         </div>
+
         {children}
-      </div>
+      </Wrapper>
     </section>
   );
 }

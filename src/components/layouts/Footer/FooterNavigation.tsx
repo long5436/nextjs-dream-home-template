@@ -10,7 +10,7 @@ import {
 function FooterNavigation() {
   return (
     <div className="border-t border-b border-white/10 py-7">
-      <div className="container 2xl:max-w-[1140px] mx-auto grid grid-cols-1 lg:grid-cols-3 gap-4 items-center">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 items-center">
         <div>
           <Image
             src="/images/logo-footer@2x.png"

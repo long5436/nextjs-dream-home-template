@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import SectionWrapper from './SectionWrapper';
+import SectionWrapper from '../../SectionWrapper';
 
 function SearchGallery() {
   return (

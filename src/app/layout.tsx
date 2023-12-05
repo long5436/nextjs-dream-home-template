@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 import { Poppins } from 'next/font/google';
 import 'react-tooltip/dist/react-tooltip.css';
-import Footer from './components/layouts/Footer';
-import Header from './components/layouts/Header';
+import Footer from '~/components/layouts/Footer';
+import Header from '~/components/layouts/Header';
 import './globals.scss';
 
 const poppins = Poppins({

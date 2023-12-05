@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Wade Warren",
+    "image": "/images/meet-1.jpg",
+    "job": "Salesperson"
+  },
+  {
+    "name": "Leslie Alexander",
+    "image": "/images/meet-2.jpg",
+    "job": "Commercial Broker"
+  },
+  {
+    "name": "Darlene Robertson",
+    "image": "/images/meet-3.jpg",
+    "job": "Realtor"
+  }
+]

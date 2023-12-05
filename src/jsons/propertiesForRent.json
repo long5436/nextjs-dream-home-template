@@ -1,0 +1,154 @@
+[
+  {
+    "name": "Gorgeous Apartment Building",
+    "address": "58 Hullbrook Road, Billesley, B13 0LA",
+    "price": "7,500",
+    "beds": 4,
+    "baths": 2,
+    "sqft": 1150,
+    "year": 3,
+    "sale": false,
+    "featured": true,
+    "images": [
+      "/images/featured-1.jpg",
+      "/images/featured-3.jpg",
+      "/images/featured-35.jpg",
+      "/images/featured-35.jpg",
+      "/images/featured-43.jpg"
+    ],
+    "authorImage": "/images/author-1.jpg"
+  },
+  {
+    "name": "Gorgeous Apartment Building",
+    "address": "58 Hullbrook Road, Billesley, B13 0LA",
+    "price": "7,500",
+    "beds": 4,
+    "baths": 2,
+    "sqft": 1150,
+    "year": 3,
+    "sale": true,
+    "featured": true,
+    "images": [
+      "/images/featured-3.jpg",
+      "/images/featured-1.jpg",
+      "/images/featured-35.jpg",
+      "/images/featured-35.jpg",
+      "/images/featured-43.jpg"
+    ],
+    "authorImage": "/images/author-2.jpg"
+  },
+  {
+    "name": "Gorgeous Apartment Building",
+    "address": "58 Hullbrook Road, Billesley, B13 0LA",
+    "price": "7,500",
+    "beds": 4,
+    "baths": 2,
+    "sqft": 1150,
+    "year": 3,
+    "sale": false,
+    "featured": false,
+    "images": [
+      "/images/featured-43.jpg",
+      "/images/featured-1.jpg",
+      "/images/featured-3.jpg",
+      "/images/featured-3.jpg",
+      "/images/featured-35.jpg"
+    ],
+    "authorImage": "/images/author-3.jpg"
+  },
+  {
+    "name": "Gorgeous Apartment Building",
+    "address": "58 Hullbrook Road, Billesley, B13 0LA",
+    "price": "7,500",
+    "beds": 4,
+    "baths": 2,
+    "sqft": 1150,
+    "year": 3,
+    "sale": false,
+    "featured": true,
+    "images": [
+      "/images/featured-35.jpg",
+      "/images/featured-1.jpg",
+      "/images/featured-3.jpg",
+      "/images/featured-3.jpg",
+      "/images/featured-43.jpg"
+    ],
+    "authorImage": "/images/author-4.jpg"
+  },
+  {
+    "name": "Gorgeous Apartment Building",
+    "address": "58 Hullbrook Road, Billesley, B13 0LA",
+    "price": "7,500",
+    "beds": 4,
+    "baths": 2,
+    "sqft": 1150,
+    "year": 3,
+    "sale": false,
+    "featured": true,
+    "images": [
+      "/images/featured-1.jpg",
+      "/images/featured-3.jpg",
+      "/images/featured-35.jpg",
+      "/images/featured-35.jpg",
+      "/images/featured-43.jpg"
+    ],
+    "authorImage": "/images/author-1.jpg"
+  },
+  {
+    "name": "Gorgeous Apartment Building",
+    "address": "58 Hullbrook Road, Billesley, B13 0LA",
+    "price": "7,500",
+    "beds": 4,
+    "baths": 2,
+    "sqft": 1150,
+    "year": 3,
+    "sale": true,
+    "featured": true,
+    "images": [
+      "/images/featured-3.jpg",
+      "/images/featured-1.jpg",
+      "/images/featured-35.jpg",
+      "/images/featured-35.jpg",
+      "/images/featured-43.jpg"
+    ],
+    "authorImage": "/images/author-2.jpg"
+  },
+  {
+    "name": "Gorgeous Apartment Building",
+    "address": "58 Hullbrook Road, Billesley, B13 0LA",
+    "price": "7,500",
+    "beds": 4,
+    "baths": 2,
+    "sqft": 1150,
+    "year": 3,
+    "sale": false,
+    "featured": false,
+    "images": [
+      "/images/featured-43.jpg",
+      "/images/featured-1.jpg",
+      "/images/featured-3.jpg",
+      "/images/featured-3.jpg",
+      "/images/featured-35.jpg"
+    ],
+    "authorImage": "/images/author-3.jpg"
+  },
+  {
+    "name": "Gorgeous Apartment Building",
+    "address": "58 Hullbrook Road, Billesley, B13 0LA",
+    "price": "7,500",
+    "beds": 4,
+    "baths": 2,
+    "sqft": 1150,
+    "year": 3,
+    "sale": false,
+    "featured": true,
+    "images": [
+      "/images/featured-35.jpg",
+      "/images/featured-1.jpg",
+      "/images/featured-3.jpg",
+      "/images/featured-3.jpg",
+      "/images/featured-43.jpg"
+    ],
+    "authorImage": "/images/author-4.jpg"
+  }
+]
