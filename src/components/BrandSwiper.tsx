@@ -1,9 +1,8 @@
 'use client';
 import Image from 'next/image';
 import 'swiper/css';
-import { Autoplay } from 'swiper/modules';
-import { Swiper, SwiperSlide } from 'swiper/react';
 import brands from '~/jsons/brands.json';
+import CustomSwiper from './CustomSwpier';
 import Wrapper from './Wrapper';
 
 function Slider() {
@@ -13,22 +12,19 @@ function Slider() {
         <h4 className="font-semibold text-base pb-4">
           Trusted by over 150+ major companies
         </h4>
-        <Swiper
-          loop={true}
-          speed={6000}
+
+        <CustomSwiper
+          speed={9000}
           autoplay={{
             delay: 1000,
           }}
           breakpoints={{
             450: {
-              slidesPerView: 2,
-              spaceBetween: 20,
-            },
-            768: {
               slidesPerView: 3,
               spaceBetween: 20,
             },
-            800: {
+
+            768: {
               slidesPerView: 4,
               spaceBetween: 20,
             },
@@ -41,16 +37,13 @@ function Slider() {
               spaceBetween: 50,
             },
           }}
-          modules={[Autoplay]}
-        >
-          {brands.map((item, index) => (
-            <SwiperSlide key={index}>
-              <a href="#">
-                <Image src={item.image} alt="" width="160" height="80" />
-              </a>
-            </SwiperSlide>
-          ))}
-        </Swiper>
+          data={brands}
+          child={(item) => (
+            <a href="#">
+              <Image src={item.image} alt="" width="160" height="80" />
+            </a>
+          )}
+        />
       </Wrapper>
     </section>
   );

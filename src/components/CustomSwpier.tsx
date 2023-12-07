@@ -11,6 +11,8 @@ interface Props {
   };
   child: (item: any) => ReactNode;
   classNameSlide?: string;
+  autoplay?: Object;
+  speed?: number;
 }
 
 function CustomSwiper({
@@ -19,15 +21,22 @@ function CustomSwiper({
   child,
   breakpoints,
   classNameSlide,
+  autoplay,
+  speed,
+  ...others
 }: Props) {
   return (
     <Swiper
+      speed={speed}
       loop={loop}
-      autoplay={{
-        delay: 5000,
-      }}
+      autoplay={
+        autoplay || {
+          delay: 5000,
+        }
+      }
       breakpoints={breakpoints}
       modules={[Autoplay]}
+      {...others}
     >
       {data.map((item, index) => {
         return (
